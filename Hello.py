@@ -1,3 +1,4 @@
+# %run "C:/Users/jungm/Documents/GitHub/jungminnking-econ8320-semester-project/Hello.py"
 import os
 import json
 from datetime import datetime, timezone
