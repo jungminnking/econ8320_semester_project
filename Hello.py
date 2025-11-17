@@ -1,4 +1,4 @@
-# %run "C:/Users/jungm/Documents/GitHub/jungminnking-econ8320-semester-project/Hello.py"
+# %run "C:/Users/jungm/Documents/GitHub/econ8320_semester_project/Hello.py"
 import os
 import json
 from datetime import datetime, timezone
@@ -25,7 +25,7 @@ SERIES = [
 ]
 
 # Path
-REPO_DIR: Path = Path(r"C:/Users/jungm/Documents/GitHub/jungminnking-econ8320-semester-project")
+REPO_DIR: Path = Path(r"C:/Users/jungm/Documents/GitHub/econ8320_semester_project")
 DATA_DIR: Path = REPO_DIR / "data"
 CSV_PATH: Path = DATA_DIR / "bls_timeseries.csv"
 META_PATH: Path = DATA_DIR / "meta.json"
