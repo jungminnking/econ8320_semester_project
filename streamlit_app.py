@@ -8,13 +8,12 @@ st.title("US Economy Dashboard")
 st.caption("Semester Project for Econ8320 Written by Jungmin Hwang")
 
 # CSV loading 
+csv_url = "https://github.com/jungminnking/econ8320_semester_project/raw/main/data/bls_timeseries.csv"
 @st.cache_data(show_spinner=False)
 def load_data(url: str) -> pd.DataFrame:
     df = pd.read_csv(url, parse_dates=["date"])
     df["series_id"] = df["series_id"].astype("string")
     return df
-    
-csv_url = "https://github.com/jungminnking/econ8320_semester_project/raw/main/data/bls_timeseries.csv"
 df_all = load_data(csv_url)
 
 # Series
