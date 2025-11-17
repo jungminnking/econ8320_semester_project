@@ -13,8 +13,8 @@ def load_data(url: str) -> pd.DataFrame:
     df = pd.read_csv(url, parse_dates=["date"])
     df["series_id"] = df["series_id"].astype("string")
     return df
-    
-csv_url = "https://github.com/jungminnking/econ8320_semester_project/main/data/bls_timeseries.csv"
+
+csv_url = "https://raw.githubusercontent.com/jungminnking/econ8320_semester_project/main/data/bls_timeseries.csv"    
 df_all = load_data(csv_url)
 
 # Series
